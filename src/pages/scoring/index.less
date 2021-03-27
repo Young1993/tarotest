@@ -1,0 +1,337 @@
+.scoring {
+  .error {
+    color: #da3629;
+    text-decoration: underline;
+    position: relative;
+    display: inline-block;
+  }
+
+  .error .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: #ffffff;
+    color: #3bb8f1;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 24px;
+    left: 0;
+  }
+
+  .error:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .scoring-essay {
+    width: 100%;
+    min-height: 800px;
+    word-break: break-all;
+    padding-bottom: 72PX;
+  }
+
+  .taro-example-body {
+    margin-top: 20px;
+
+    #input {
+      border-bottom: solid 3px #7955483b;
+      font-size: 32px;
+      letter-spacing: 1PX;
+      padding-left: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+  .scoring-body {
+    max-width: 100%;
+  }
+
+  .scoring-essay textarea {
+    background-color: #ffffff;
+    padding: 12px 12px 20px;
+    letter-spacing: 2px;
+    font-size: 28px;
+    word-break: break-word;
+    text-align: justify;
+    width: 98%;
+  }
+
+  .submit-btn {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    z-index: 10000;
+    background-color: #fff;
+
+    .camera {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      z-index: 10000;
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .btn {
+      background-color: #1A434B;
+      color: #fff;
+      border-radius: 30PX;
+      width: 60%;
+    }
+
+    .reset-btn {
+      position: absolute;
+      right: 40px;
+      bottom: 50px;
+      font-size: 36px;
+      color: #1A434B;
+      font-weight: bolder;
+      letter-spacing: 1px;
+      text-decoration: underline;
+      z-index: 10000;
+      width: 80px;
+      padding: 0;
+      line-height: unset;
+      border: none;
+    }
+  }
+
+  .input-container {
+    padding: 2%;
+
+    .form-container {
+      width: 100%;
+    }
+  }
+
+  .result-header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 72px;
+    background-color: #fff;
+    z-index: 10000;
+
+    .swiper {
+      line-height: 72px;
+      width: 50%;
+      text-align: center;
+      font-weight: bolder;
+      border-bottom: solid 3px #efeaeab3;
+      color: #909090;
+      letter-spacing: 1px;
+    }
+
+    .swiper-active {
+      background-color: #e2f5f9;
+      color: #1A434B;
+      border-bottom: solid 3rpx #e2f5f9;
+    }
+  }
+
+  .result-body {
+    margin-top: 106px !important;
+  }
+
+  .essay-contianer {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: bold;
+
+    .essay-title {
+      text-align: justify;
+      margin-bottom: 20px;
+      padding: 6px;
+    }
+
+    .essay-text {
+      text-align: justify;
+      padding: 6px;
+
+      .paragraph {
+        margin-bottom: 32px;
+
+        .sentences {
+          display: inline;
+          line-height: 36px;
+          margin-left: 8px;
+          margin-right: 8px;
+          text-align: justify;
+
+          .sentence_block {
+            display: inline;
+            line-height: 36px;
+            text-align: justify;
+          }
+        }
+      }
+
+      .text_normal,
+      .text_other {
+        margin-right: 8px;
+      }
+
+      .text_remove {
+        min-width: 32px;
+        height: 36px;
+        display: inline-flex;
+        border-bottom: solid 4px #f14949;
+        padding-right: 4px;
+        padding-left: 4px;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .result-band {
+    margin: 20px;
+    padding-bottom: 40px;
+
+    .btn-reset {
+      letter-spacing: 2px;
+      background-color: #fff2ef;
+      color: #292827;
+    }
+
+    .label-band {
+      color: #2acabb;
+      background-color: #f4fffe;
+      padding: 4px 12px;
+      border-radius: 10px;
+    }
+
+    .warn-label {
+      color: #fff;
+      background-color: #ff6838;
+      padding: 4px 8px;
+      border-radius: 12px;
+    }
+
+    .overall-card {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      padding: 20px;
+      background-color: #ffecea;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .label {
+        font-weight: bold;
+        color: #af8779;
+        line-height: 72px;
+        border-bottom: solid 2px #fefefe;
+      }
+
+
+      .overall_text {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 50px;
+        color: #333;
+        margin: 20px;
+      }
+    }
+
+    .result-card {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      padding: 20px;
+      background-color: #ffd7d759;
+      border-radius: 12px;
+
+      .icon-box-img {
+        display: inline-block;
+        width: 16PX;
+        height: 16PX;
+        background-color: #8e8e8e;
+        border-radius: 500px;
+        margin-right: 16px;
+      }
+
+      .label {
+        font-weight: bold;
+        color: #382e2b;
+        line-height: 72px;
+      }
+
+      .estimate {
+        color: #8c503a;
+        line-height: 80px;
+      }
+    }
+
+    .overall {
+      color: #ff2b1a;
+      font-weight: bolder;
+    }
+
+    .words-card {
+      background-color: #d5f7f7
+    }
+
+    .grammar-card {
+      background-color: #e7f3fd;
+      font-size: 16PX;
+
+      .grammar_tag {
+        background-color: #f9d9d7;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 4px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .circlePage {
+    padding: 20px 0;
+  }
+
+  .wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circleText {
+    text-align: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .num {
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+    line-height: 12px;
+  }
+
+  .line {
+    width: 70px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.4);
+    margin-top: 12px;
+    margin-bottom: 9px;
+  }
+
+  .canvas {
+    width: 300px;
+    height: 300px;
+  }
+
+  .progress {
+    position: absolute;
+  }
+
+}
